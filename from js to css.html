@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+
+        #img1 {
+            position:relative
+        }
+    
+    
+    </style>
+   
+    
+
+    <script>
+       var i=5
+        function a() {
+
+            var x = document.getElementById("img1").style.left = i + "px"; 
+
+         
+               i = i + 7
+            if (i <1000) {
+                setTimeout("a()", 2);
+
+            }
+        }
+        
+
+    </script>
+
+</head>
+<body onload="a()">
+    <img src="l.jpg" id="img1"/>
+
+</body>
+</html>
